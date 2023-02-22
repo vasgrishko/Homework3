@@ -12,8 +12,8 @@ x = int(input('Введите число: '))
 find_num = list_1[0]
 
 for i in range(len(list_1)):
-    if list_1[i] >= x and list_1[i] - x <= find_num - x:
+    if list_1[i] > x and list_1[i] - x <= find_num - x:
         find_num = list_1[i]
-    elif list_1[i] <= x and find_num - x <= list_1[i] - x:
+    elif list_1[i] < x and find_num - x <= list_1[i] - x:
         find_num = list_1[i]
 print(find_num)
